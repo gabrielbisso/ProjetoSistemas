@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciamento de Leitos</title>
+    <link rel="stylesheet" href="{% static 'leitos/css/leitos.css' %}">
+    <link rel="icon" href="{% static 'login/img/logoSistema.png' %}" type="image/png">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+</head>
+<body>
+
+    <h1>Gerenciamento de Leitos</h1>
+
+    <div class="grid-container">
+        {% for leito in leitos %}
+        <div class="leito {% if leito.ocupado %}ocupado{% else %}livre{% endif %}">
+            {% if not leito.ocupado %}
+                <a href="{% url 'cadastro' %}?leito={{ leito.numero }}" title="Cadastrar paciente no leito {{ leito.numero }}">
+                    <i class="icon fas fa-bed"></i>
+                    <div class="numero-leito">{{ leito.numero }}</div>
+                </a>
+            {% else %}
+                <i class="icon fas fa-bed"></i>
+                <div class="numero-leito">{{ leito.numero }}</div>
+            {% endif %}
+            <div class="tooltip">
+                {% if leito.ocupado %}
+                    <strong>Paciente:</strong> {{ leito.paciente_nome }}<br>
+                    <strong>Idade:</strong> {{ leito.paciente_idade }}<br>
+                    <strong>Internado em:</strong> {{ leito.data_internacao }}<br>
+                    <strong>Motivo:</strong> {{ leito.motivo }}
+                {% else %}
+                    Leito disponível
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+
+    </div>
+
+</body>
+</html>

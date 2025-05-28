@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel de Leitos</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+
+    <link rel="stylesheet" href="{% static 'login/css/login.css' %}">
+
+    <link rel="icon" href="{% static 'login/img/logoSistema.png' %}" type="image/png">
+</head>
+<body>
+
+<div class="home-wrapper">
+    <div class="home-card">
+        <img src="{% static 'login/img/logoSistema.png' %}" alt="Logo do Sistema" class="logo-img">
+        <h1 class="title">Painel de Leitos</h1>
+        <p class="subtitle">Gerencie com facilidade os leitos hospitalares disponíveis e ocupados.</p>
+        <div class="icon-bed"><i class="fas fa-procedures"></i></div>
+
+        <form action="{% url 'leitos:leitos' %}" method="get">
+            <div class="form-group">
+                <label for="credencial" class="sr-only">Credencial</label>
+                <input type="text" id="credencial" name="credencial" class="form-control" placeholder="Digite sua credencial" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-enter">Acessar Painel</button>
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>

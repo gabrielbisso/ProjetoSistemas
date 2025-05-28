@@ -1,8 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
-# Create your views here.
-
+from .models import Leito
 
 def leitos(request):
-    return render(request, 'cadastro.html')
+    leitos = Leito.objects.all().order_by('numero')  
+    return render(request, 'leitos.html', {'leitos': leitos})

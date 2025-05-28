@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.leito {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.leito:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.numero-leito {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.leito.livre .icon {
+    color: green;
+}
+
+.leito.ocupado .icon {
+    color: red;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 180px;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 14px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+/* Setinha do tooltip */
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+.leito:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.leito a {
+  text-decoration: none;  
+  color: inherit;         
+  cursor: pointer;        
+}

@@ -1,38 +1,80 @@
-body{
-    background-color:rgba(161, 180, 223, 0.27);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.imagemlogo{
-    width: 400px; 
-    height: 400px;  
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
 }
 
-#icone{
-    background-color: #04153b;
+.home-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
 }
 
-#iconedentro{
-    color:white;
-}
-
-#formulario{
-    background-color: #04153b; 
-    color:white;
-}
-
-#botao{
-    background-color: #04153b; 
-    color: white;
-}
-
-#checkbox{
+.home-card {
+    background-color: #ffffff;
+    color: #1d3557;
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
     text-align: center;
+    animation: fadeIn 0.8s ease;
 }
 
-.termo{
-    color: white;
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-.divbot{
-    text-align: center;
+
+.logo-img {
+    width: 100px;
+    margin-bottom: 25px;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: #6c757d;
+    margin-bottom: 25px;
+}
+
+
+.icon-bed {
+    font-size: 50px;
+    color: #1d3557;
+    margin-bottom: 25px;
+}
+
+.btn-enter {
+    background-color: #1d3557;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.btn-enter:hover {
+    background-color: #0b2544;
+    transform: translateY(-2px);
 }
