@@ -7,8 +7,6 @@
  <a href="#Code">Code</a>
 </p>
 
-[![GitHub contributors](https://img.shields.io/github/contributors/gabrielbisso/ProjetoSistemas.svg)](https://github.com/gabrielbisso/ProjetoSistemas/graphs/contributors)
-
 <h2 id=JustificativadoProjeto>Justificativa do Projeto</h2>
 
 > Este projeto surgiu a partir do trabalho semestral proposto pelo professor responsável pela disciplina de Sistemas de Informação. O principal objetivo é avaliar o planejamento e a construção de um sistema que atenda a uma demanda relacionada à área da Saúde.
@@ -19,7 +17,18 @@
 
 <h2 id=descricaodoprototipo>Descrição do Protótipo</h2>
 
-> O projeto presente neste repositório consiste em um protótipo criado para exemplificar a ideia que surgiu durante o desenvolvimento do trabalho. Trata-se de uma versão inicial que demonstra a funcionalidade e o conceito do sistema proposto.
+> O projeto presente neste repositório consiste em um protótipo desenvolvido para ilustrar a ideia concebida durante o trabalho. Trata-se de uma versão inicial que demonstra tanto a funcionalidade quanto o conceito do sistema proposto.
+
+##### O sistema é composto por três telas principais:
+
+* Tela de Acesso:
+Página de login destinada ao responsável pela gestão dos leitos ou à equipe administrativa da unidade onde o sistema está sendo utilizado.
+
+* Tela de Visualização de Leitos:
+Exibe um painel com diversos ícones representando os leitos hospitalares. Os leitos livres são indicados na cor verde, enquanto os ocupados aparecem em vermelho. Ao passar o cursor sobre um leito ocupado, uma tooltip é exibida com informações resumidas do paciente que está utilizando aquele leito.
+
+* Tela de Cadastro de Paciente:
+Acessada ao clicar em um leito livre. Essa tela apresenta um formulário no qual é possível cadastrar informações do paciente, como nome, idade, motivo da internação e uma descrição do caso. O objetivo é registrar quem está ocupando o leito e os dados relevantes para o controle da internação.
 
 ## Estrutura do Repositório
 <h3 id=Code>Code</h3>
