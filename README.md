@@ -27,4 +27,4 @@
 ## Estrutura do Repositório
 <h3 id=Code>Code</h3>
 
-> No code, é possível acompanhar tanto o desenvolvimento do projeto quanto os documentos específicos que fazem parte desse processo. Além disso, o progresso do projeto pode ser monitorados por meio das atualizações incorporadas.
+> No code, é possível acompanhar os documentos específicos que fazem parte desse processo.
