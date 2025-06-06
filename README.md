@@ -17,14 +17,16 @@
 
 <h2 id=descricaodoprototipo>Descrição do Protótipo</h2>
 
-> O protótipo consiste em um banco de dados relacional desenvolvido para uma clínica médica. Ele permite armazenar, organizar e recuperar informações relacionadas a:
-> * Pacientes e seus atendimentos;
-> * Convênios de saúde;
-> * Médicos e suas respectivas especialidades.
->   
-> Além da criação do banco de dados, foram realizadas consultas de teste com base em casos específicos, com o objetivo de comprovar sua consistência e funcionalidade.
+> O projeto presente neste repositório consiste em um protótipo desenvolvido para ilustrar a ideia concebida durante o trabalho. Trata-se de uma versão inicial que demonstra tanto a funcionalidade quanto o conceito do sistema proposto.
+
+#### O sistema é composto por três telas principais:
+* Tela de Acesso: Página de login destinada ao responsável pela gestão dos leitos ou à equipe administrativa da unidade onde o sistema está sendo utilizado.
+
+* Tela de Visualização de Leitos: Exibe um painel com diversos ícones representando os leitos hospitalares. Os leitos livres são indicados na cor verde, enquanto os ocupados aparecem em vermelho. Ao passar o cursor sobre um leito ocupado, uma tooltip é exibida com informações resumidas do paciente que está utilizando aquele leito.
+
+* Tela de Cadastro de Paciente: Acessada ao clicar em um leito livre. Essa tela apresenta um formulário no qual é possível cadastrar informações do paciente, como nome, idade, motivo da internação e uma descrição do caso. O objetivo é registrar quem está ocupando o leito e os dados relevantes para o controle da internação.
 
 ## Estrutura do Repositório
 <h3 id=Code>Code</h3>
 
-> No code, é possível acompanhar os documentos específicos que fazem parte desse processo.
+> No code, é possível acompanhar tanto o desenvolvimento do projeto quanto os documentos específicos que fazem parte desse processo. Além disso, o progresso do projeto pode ser monitorados por meio das atualizações incorporadas.
