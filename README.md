@@ -9,12 +9,11 @@
 
 <h2 id=JustificativadoProjeto>Justificativa do Projeto</h2>
 
-> Este projeto foi desenvolvido como trabalho final da disciplina Banco de Dados, com o objetivo de aplicar na prática os conhecimentos adquiridos ao longo do semestre. A escolha de criar um banco de dados para uma clínica médica se baseia na correlação do curso entre a infomrática e a área da saúde. 
+> Este projeto surgiu a partir do trabalho semestral proposto pelo professor responsável pela disciplina de Sistemas de Informação. O principal objetivo é avaliar o planejamento e a construção de um sistema que atenda a uma demanda relacionada à área da Saúde.
 
 <h2 id=ObjetivodoProjeto>Objetivo do Projeto</h2>
 
-> O objetivo do projeto é criar e implementar um banco de dados que organize e gerencie de forma eficaz as informações de uma clínica médica. Esse sistema deve abranger dados de pacientes, atendimentos, convênios de saúde, médicos e suas especialidades, promovendo uma gestão mais eficiente, segura e integrada desses elementos.
-
+> O sistema desenvolvido tem como finalidade otimizar e organizar o processo de ocupação e desocupação de leitos hospitalares. Considerando a frequente superlotação e a escassez de leitos, especialmente durante a pandemia de COVID-19, o sistema busca ser uma ferramenta de fácil utilização e gerenciamento.
 <h2 id=descricaodoprototipo>Descrição do Protótipo</h2>
 
 > O projeto presente neste repositório consiste em um protótipo desenvolvido para ilustrar a ideia concebida durante o trabalho. Trata-se de uma versão inicial que demonstra tanto a funcionalidade quanto o conceito do sistema proposto.
